@@ -1,30 +1,3 @@
-; bhax_mandala9.scm
-;
-; BHAX-Mandala creates a mandala from a text box.
-; Copyright (C) 2019  Norbert Bátfai, batfai.norbert@inf.unideb.hu
-;
-;    This program is free software: you can redistribute it and/or modify
-;    it under the terms of the GNU General Public License as published by
-;    the Free Software Foundation, either version 3 of the License, or
-;    (at your option) any later version.
-;
-;    This program is distributed in the hope that it will be useful,
-;    but WITHOUT ANY WARRANTY; without even the implied warranty of
-;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;    GNU General Public License for more details.
-;
-;    You should have received a copy of the GNU General Public License
-;    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-;
-; Version history
-;
-;  This Scheme code is partially based on the Python code 
-;  Pat625_Mandala_With_Your_Name.py by Tin Tran, which is released under the GNU GPL v3, see 
-;  https://gimplearn.net/viewtopic.php/Pat625-Mandala-With-Your-Name-Script-for-GIMP?t=269&p=976
-;
-;  https://bhaxor.blog.hu/2019/01/10/a_gimp_lisp_hackelese_a_scheme_programozasi_nyelv
-; 
-
 (define (elem x lista)
 
     (if (= x 1) (car lista) (elem (- x 1) ( cdr lista ) ) )
